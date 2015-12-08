@@ -1,0 +1,51 @@
+
+<div style="padding-top: 15px">
+	<!-- Summary goes here -->
+	This is a view for "Add a New User", loaded as part of single page app
+	demo. Feel free to play around.
+</div>
+<div style="padding-bottom: 50px">
+	<table style="width: 100%">
+		<tbody>
+			<tr>
+				<td colspan="2" style="width: 100%; padding: 10px;">
+					<div class="alert alert-info ng-binding" role="alert"></div>
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 45%; padding-left: 40px; vertical-align: top">
+					<div style="padding-bottom: 20px">
+						<h3>Add a User</h3>
+						{{saved}}
+					</div>
+					<form
+						class="form-horizontal ng-pristine ng-invalid ng-invalid-required"
+						role="form" ng-submit="createNewUser();">
+						<div class="form-group">
+							<label class="col-md-4 control-label">Name</label>
+							<div class="col-md-5">
+								<input type="text"
+									class="form-control ng-pristine ng-invalid ng-invalid-required"
+									name="name" ng-model="name" required="">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-md-4 control-label">Email</label>
+							<div class="col-md-5">
+								<input type="text"
+									class="form-control ng-pristine ng-invalid ng-invalid-required"
+									name="email" ng-model="email" required="">
+							</div>
+						</div>
+						<div class="form-group">
+							<div style="padding-left: 390px">
+								<input type="submit" value="Submit" class="btn btn-primary">
+							</div>
+						</div>
+					</form>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

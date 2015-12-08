@@ -1,0 +1,27 @@
+<!-- ngView:  -->
+<div>
+	<div style="padding: 0px 0px 0px 30px" class="ng-scope">
+		<div class="page-header" style="margin: 0">
+			<h1>
+				<!-- Heading goes here -->
+				All Users
+			</h1>
+		</div>
+		<div style="padding-top: 15px; padding-bottom: 30px">
+			<!-- Summary goes here -->
+
+		</div>
+		<div>
+			<table class="table">
+				<tbody>
+					<tr>
+						<th>Name</th>
+						<th>Email</th>
+					</tr>
+					<tr ng-repeat="user in getUsers()">
+						<td>{{user.name}}</td>
+						<td>{{user.email}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>

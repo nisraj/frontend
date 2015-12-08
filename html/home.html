@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="userApp">
+<head>
+<meta charset="ISO-8859-1">
+<title>Micro services demo</title>
+<script src="../resources/js/src/plugin/angular.min.js"></script>
+<script src="../resources/js/src/plugin/angular-route.js"></script>
+<script src="../resources/js/src/plugin/angular-resource.js"></script>
+<script src="../resources/js/src/config/app.js"></script>
+<script src="../resources/js/src/service/service.js"></script>
+<script src="../resources/js/src/config/route.js"></script>
+<script src="../resources/js/src/controller/controller.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="../resources/css/bootstrap.min.css">
+</head>
+<body>
+	<div align="center">
+		<h3>Welcome to Micro services demo</h3>
+	</div>
+	<div class="container">
+		<table style="width: 100%">
+			<tr>
+				<td style="width: 15%; vertical-align: top; padding-top: 10px">
+					<div class="list-group">
+						<a href="#/" class="list-group-item active">Home</a> <a
+							href="#/users/new" class="list-group-item">New User</a> <a
+							href="#/users" class="list-group-item">All Users</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<td style="width: 85%; vertical-align: top;">
+			<div ng-view></div>
+		</td>
+	</div>
+</body>
+</html>
